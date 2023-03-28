@@ -1,0 +1,37 @@
+{
+  "name": "shangoo-pharmacy",
+  "version": "1.0.0",
+  "description": "MERN stack web application for Shangoo Pharmacy clients.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaylacasale/shangoo-pharmacy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaylacasale/shangoo-pharmacy/issues"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  },
+  "homepage": "https://github.com/kaylacasale/shangoo-pharmacy#readme",
+  "dependencies": {
+    "@cloudinary/react": "^1.11.2",
+    "@cloudinary/url-gen": "^1.9.2",
+    "apollo-server-express": "^3.12.0",
+    "axios": "^1.3.4",
+    "cloudinary-core": "^2.13.0",
+    "dayjs": "^1.11.7",
+    "express": "^4.18.2",
+    "node": "^19.8.1"
+  }
+}
