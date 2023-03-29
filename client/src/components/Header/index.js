@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 
 import Auth from '../../utils/auth'
 
+import shangooIcon from '../../assets/images/shangoo-icon.png'
+
 const Header = () => {
   const logout = (event) => {
     event.preventDefault()
@@ -13,7 +15,7 @@ const Header = () => {
       <div className="container flex-row justify-space-between-lg justify-center align-center ">
         <div>
           <Link className="text-dark " to="/">
-            <h1 className="m-0">Shangoo Pharmacy</h1>
+            <h1 className="m-0" id='text-shadow' style={{ color: '#275CBA' }}>Shangoo <span><img src={shangooIcon}></img></span></h1>
           </Link>
 
           <p className="m-0 text-dark">
@@ -32,7 +34,7 @@ const Header = () => {
             </>
           ) : (
             <>
-              <Link className="btn btn-lg btn-dark m-2" to="/login">
+              <Link className="btn btn-lg btn-primary m-2" to="/login">
                 Login
               </Link>
               <Link className="btn btn-lg btn-light m-2" to="/signup">
