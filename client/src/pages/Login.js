@@ -59,7 +59,7 @@ const Login = (props) => {
         <main className="flex-row justify-center mb-4">
             <div className="col-12 col-lg-10">
                 <div className="card">
-                    <h4 className="card-header bg-dark text-light p-2 m-0">Login</h4>
+                    <h4 className="card-header bg-primary text-light p-2 m-0">Login</h4>
                     <div className="card-body">
                         {data ? (
                             <p>
@@ -84,7 +84,7 @@ const Login = (props) => {
                                     value={formState.password}
                                     onChange={handleChange}
                                 />
-                                <button className="btn btn-block btn-dark" type="submit">
+                                <button className="btn btn-block btn-primary" type="submit">
                                     Submit
                                 </button>
                             </form>

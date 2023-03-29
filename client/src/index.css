@@ -23,11 +23,15 @@ body {
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #74ccff;
-    background: linear-gradient(180deg,
-            #73ccff 0%,
+    background: #ffffff;
+    /* background: linear-gradient(180deg,
+            #ffffff 0%,
             #009FFD 52%,
-            #2A2A72 100%);
+            #2A2A72 100%); */
+    background: linear-gradient(180deg,
+            #2A2A72 0%,
+            #009FFD 52%,
+            #ffffff 100%);
 }
 
 /* body {
@@ -48,6 +52,10 @@ body {
    */
 main {
     display: block;
+}
+
+#text-shadow {
+    text-shadow: 2px 2px 4px black, 2px 2px 2px #132D5C;
 }
 
 /**
@@ -956,7 +964,7 @@ a:hover {
 
 /* BACKGROUND UTILS */
 .bg-primary {
-    background-color: #2d3e50 !important;
+    background-color: #21509D !important;
 }
 
 .bg-info {
@@ -1057,12 +1065,12 @@ a:hover {
 }
 
 .btn.btn-primary {
-    background-color: #2d3e50;
+    background-color: #21509D;
     color: #d9e9e8;
 }
 
 .btn.btn-primary:hover {
-    background-color: #84b8b4;
+    background-color: #E36B43;
 }
 
 .btn.btn-danger {
@@ -1089,7 +1097,7 @@ a:hover {
 }
 
 .btn.btn-light:hover {
-    background-color: #84b8b4;
+    background-color: #E36B43;
 }
 
 .btn.btn-dark {
