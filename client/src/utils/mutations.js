@@ -67,3 +67,13 @@ export const ADD_APPOINTMENT = gql`
     }
   }
 `;
+
+export const FIND_PRESCRIPTION = gql`
+  mutation FindPrescription($prescriptionName: String!) {
+    findPrescription(prescriptionName: $prescriptionName) {
+      id
+      name
+      medication
+    }
+  }
+`;

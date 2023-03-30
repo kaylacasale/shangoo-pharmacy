@@ -13,11 +13,11 @@ const SalonList = ({ salons }) => {
       <main className="flex-row  justify-center mb-10">
         <div className="col-12 col-lg-12">
           <div className="card">
-            <h4 className="card-header text-center bg-dark text-light p-2">
+            <h4 className="card-header text-center bg-primary text-light p-2">
               Salons
             </h4>
             <p className=" text-center text-black p-2">
-              Click on your favorite salon on this list
+              Click on your pharmacy on this list
             </p>
 
             <div className="card-body flex-row my-6">
@@ -29,7 +29,7 @@ const SalonList = ({ salons }) => {
                         className="btn  btn-lg btn-light btn-block btn-squared"
                         to={`/salons/${salon._id}`}
                       >
-                        <h5 className="card-header bg-black text-light ">
+                        <h5 className="card-header bg-primary text-light ">
                           {salon.salonName}
                           <span style={{ fontSize: '0.825rem' }}>
                             {salon.createdAt}
