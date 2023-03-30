@@ -11,6 +11,13 @@ const { gql } = require('apollo-server-express')
 // gallery for user=Artist: prior nail photos
 // gallery for user=Admin: storefront photos
 const typeDefs = gql`
+
+type Prescription {
+  id: ID!
+  name: String!
+  medication: String!
+}
+
   type User {
     _id: ID
     username: String
@@ -71,6 +78,10 @@ const typeDefs = gql`
       appointmentService: String!
        ): Salon
     addService(appointmentId: ID!, serviceType: String!): Salon
+  }
+
+  type Mutation {
+    findPrescription(prescriptionName: String!): Prescription
   }
 `
 // less repeating data bw models, more linear path, less hooks and neccesary arguments to pass in request body

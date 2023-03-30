@@ -42,7 +42,11 @@ const resolvers = {
   },
 
   Mutation: {
-
+    findPrescription: (_, { prescriptionName }, context) => {
+      // Add code to search for prescription by name
+      const prescription = findPrescriptionByName(prescriptionName);
+      return prescription;
+    },
 
 
     addUser: async (parent, { username, email, password, isAdmin, isClient = false, isArtist = false }) => {

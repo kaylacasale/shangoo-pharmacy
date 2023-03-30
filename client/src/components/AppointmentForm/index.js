@@ -44,7 +44,7 @@ const AppointmentForm = ({ salonId }) => {
 
       setdatetime('')
       setAppointmentService('')
-    } catch (err) {}
+    } catch (err) { }
   }
 
   return (
@@ -76,7 +76,7 @@ const AppointmentForm = ({ salonId }) => {
                 onChange={(event) => setAppointmentService(event.target.value)}
               ></textarea>
 
-              <button className="btn btn-dark btn-lg py-3" type="submit">
+              <button className="btn btn-primary btn-lg py-3" type="submit">
                 Add Appointment
               </button>
               {userAlert && (

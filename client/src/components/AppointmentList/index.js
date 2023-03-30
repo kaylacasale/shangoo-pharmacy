@@ -30,7 +30,7 @@ const AppointmentList = ({ appointments = [] }) => {
                         appointment={appointment}
                         to={`/appointments/${appointment._id}`}
                       >
-                        <h5 className="card-header bg-black text-light">
+                        <h5 className="card-header bg-primary text-light">
                           {appointment.datetime}
                           <span style={{ fontSize: '0.825rem' }}>
                             {appointment.createdAt}
